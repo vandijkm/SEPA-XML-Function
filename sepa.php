@@ -1,4 +1,13 @@
 <?php
+$input = array(
+	'begunstigde' => array (
+		'batch' = 'RCUR',
+		''
+	),
+	'opdrachten' => array(
+		
+	);
+);
 function create_sepa($input) {
 	if ($input['begunstigde']['batch'] === 'FRST') {
 		$uitvoerdatum = date('Y-m-d', strtotime("+1 week"));
